@@ -1,0 +1,15 @@
+<div class="search-view">
+    <h1 class="title">Search</h1>
+    <div class="search-bar">
+      <app-search-bar (event)="showResults($event)"></app-search-bar>
+    </div>
+    <div class="all-results"> ALL RESULTS </div>
+    <div class="gallery">
+      <div class="gallery__item">
+        <ng-container *ngFor="let img of results">
+          <img
+            src="{{ img.imageSrc }}"
+            alt="Img">
+        </ng-container>
+     </div>
+  </div>

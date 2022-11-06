@@ -1,0 +1,25 @@
+<main class="chat">
+    <div class="container">
+        <br>
+        <h1>Lista de chats</h1>
+    </div>
+
+    <div class="container-md container-sm  ">
+        <div class="chat-container cardb">
+            <ng-container *ngFor="let chat of chats;  index as i; last as isLast">
+                <div class="container">
+                <div class="row cardt" *ngIf="i == 4 || i == 10">
+                    <div class="col-1"></div>
+                    <div class="col-2" id="profile-thumbnail" >
+                        <img src="{{images[chat.id + 7].imageSrc}}" alt="" class="avatar" />
+                    </div>
+                    <div class="col-7 align-content-center">
+                        <strong>{{chat.username}}</strong>
+                        <p>{{chat.message}}</p>
+                    </div>
+                </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</main>

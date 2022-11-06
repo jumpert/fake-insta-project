@@ -1,0 +1,50 @@
+@media (max-width: 650px) {
+    #TopNavBar{
+        display: none;
+    }
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.toolbarNav{  
+    position: fixed;
+    top: 0; 
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0em;
+    background-color: white;
+   
+  /* -webkit-box-shadow: 3px 3px 5px 6px #ccc;   Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  /* -moz-box-shadow:    3px 3px 5px 6px #ccc;   Firefox 3.5 - 3.6 */
+  /* box-shadow:        2px 2px 4px 5px #ccc;   Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+   
+}
+
+.material-icons.color_blue:hover { 
+    color: blueviolet;
+}
+
+.alinearIcono{
+    position: relative;
+    top: -5px;
+    margin-left: 5px; /* optional */
+}
+
+.botones{
+    padding: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    border-radius: 20px;
+    /*background-image: linear-gradient(202.17deg, #FF00D6 8.58%, #FF4D00 91.42%); */
+    background-size: 100% auto;
+    border: none;
+    /* color: white; */
+    display: block;
+}

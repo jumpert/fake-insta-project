@@ -1,0 +1,24 @@
+.insta-button{
+    width: 70px;
+    height: 40px;
+    border-radius: 20px;
+    background-image: linear-gradient(202.17deg, #FF00D6 8.58%, #FF4D00 91.42%);
+    background-size: 200% auto;
+    border: none;
+    color: white;
+    display: block;
+}
+
+.insta-button:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    animation:slidebg 5s linear infinite;
+}
+         
+.bi-plus{
+    font-size: 22px;
+    color: white;
+}
+
+         

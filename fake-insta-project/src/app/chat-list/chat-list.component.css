@@ -1,0 +1,61 @@
+.chat {
+    margin-top: 4rem;
+
+}
+
+div.chat-content { 
+    border-radius: 50%;
+    height: 40rem;
+    border-bottom: 2rem;
+}
+
+.card {
+    height: 100%;
+    /*background-color: azure;*/
+    margin-top: 10px;
+}
+.cardt {
+    border-top: #bbbbbb 1px solid;
+    margin-top: 15px;
+}
+.cardb {
+    border-bottom: #bbbbbb 1px solid;
+    margin-bottom: 15px;
+}
+
+
+.avatar{
+    width: 45pt;
+    height:45pt;
+
+    border-radius: 75%;
+}
+/* ul { list-style: none;} */
+
+.insta-button{
+    width: 3rem;
+    height: 2rem;
+    border-radius: 20px;
+    background-image: linear-gradient(202.17deg, #FF00D6 8.58%, #FF4D00 91.42%);
+    background-size: 200% auto;
+    border: none;
+    color: white;
+    display: block;
+}
+
+.insta-button:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    animation:slidebg 5s linear infinite;
+}
+         
+.bi-plus{
+    font-size: 22px;
+    color: white;
+}
+h1 {
+    margin-top: 2rem;
+    padding: auto;
+    text-align: center;
+}

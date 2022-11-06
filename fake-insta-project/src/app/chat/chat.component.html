@@ -1,0 +1,43 @@
+<main class="chat">
+    <div class="container">
+        <div class="chat-container" *ngFor="let chat of chats;">
+            <ng-container *ngIf="isFirst(chat.chatId)">
+                <div class="row" *ngIf="isSender(chat.id)">
+                    <div class="col-1"></div>
+                    <div class="col-2" id="profile-thumbnail" >
+                        
+                        <img src="{{images[chat.id + 7].imageSrc}}" alt="" class="avatar" />
+                    </div>
+                    <div class="col-7 card align-content-center" *ngIf="isSender(chat.id)">
+                        <p>{{chat.message}}</p>
+                    </div>
+                </div>
+                <div class="row" *ngIf="!isSender(chat.id)">
+                    <div class="col-2"></div>
+                    <div class="col-7 card align-content-center">
+                        <p>{{chat.message}}</p>
+                   </div>
+                    <div class="col-2" id="profile-thumbnail">
+                        <img src="{{images[chat.id + 7].imageSrc}}" alt="" class="avatar" />
+                    </div>
+                </div> 
+
+            </ng-container>
+            
+            
+        </div>
+        <form class="align-content-end justify-content-end">
+            <div class="chat-send row">
+                <div class="col-2">
+                    
+                </div>
+                <div class="col-6">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <button type="button" class="insta-button"><i class="bi "> Send </i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>

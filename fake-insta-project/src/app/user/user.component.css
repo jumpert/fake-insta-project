@@ -1,0 +1,43 @@
+.profile{
+    display: flex;
+    align-items: center;
+    gap:10pt;
+}
+
+#profile-thumbnail{
+    width: 5rem;
+    height: 5rem;
+}
+
+.avatar{
+    width: 32pt;
+    height: 32pt;
+    border-radius: 100%;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    width: 94pt;
+    height: 30pt;
+    font-family: 'Roboto', sans-serif;
+}
+
+.name{
+    font-size: 13pt;
+    font-weight: 1000;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+
+.username {
+    font-size: 11pt;
+    margin: 0;
+}
+.avatar{
+    width: 45pt;
+    height:45pt;
+
+    border-radius: 75%;
+}

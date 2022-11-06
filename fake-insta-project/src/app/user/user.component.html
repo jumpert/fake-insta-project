@@ -1,0 +1,17 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="profile flex">
+  <ng-container *ngFor="let profile of users">
+    <div id="profile-thumbnail">
+      <img src={{images[chat.id + 7].imageSrc}} alt="" class="avatar" />
+    </div>
+
+    <div class="profile-info">
+      <p class="name">{{profile.firstName}}</p>
+      <p class="username">{{profile.username}}</p>
+    </div>
+  </ng-container>
+</div>

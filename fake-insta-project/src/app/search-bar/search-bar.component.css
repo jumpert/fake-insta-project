@@ -1,0 +1,20 @@
+.search-box {
+    width: 343px;
+    height: 52px;
+    box-sizing: border-box;
+    position: absolute;
+    border: 2px solid #000000;
+    user-select: none;
+  }
+  
+  .search-box::placeholder{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 17.58px;
+      padding-left:10px;
+  }
+  
+  input:focus{
+      outline: none;
+  }

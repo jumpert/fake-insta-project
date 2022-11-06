@@ -1,0 +1,10 @@
+.post-image{
+    height: 50vh;
+    width: 90vw;
+    background-color: grey;
+}
+
+img{
+    height: 50vh;
+    width: auto;
+}
