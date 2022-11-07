@@ -2,20 +2,20 @@
     <mat-toolbar-row>
         <span class="example-spacer"></span>
         <div class="botones botonPagina">
-            <mat-icon class="material-icons color_blue"> home_outline</mat-icon>
-            <span class="alinearIcono">Discover</span>
+            <a routerLink="/home"><mat-icon class="material-icons color_blue"> home_outline</mat-icon>
+            <span class="alinearIcono">Discover</span></a>
         </div>
         <div class="botones">
-            <mat-icon class="material-icons color_blue">search </mat-icon>
-            <span class="alinearIcono">Search</span>
+            <a routerLink="/search"><mat-icon class="material-icons color_blue">search </mat-icon>
+            <span class="alinearIcono">Search</span></a>
         </div>
         <div class="botones">
-            <mat-icon class="material-icons color_blue">add </mat-icon>
-            <span class="alinearIcono">Upload picture</span>
+            <a routerLink="/upload"><mat-icon class="material-icons color_blue">add </mat-icon>
+            <span class="alinearIcono">Upload picture</span></a>
         </div>
         <div class="botones">
-            <mat-icon class="material-icons color_blue">chat_bubble_outline</mat-icon>
-            <span class="alinearIcono">Chat</span>
+            <a routerLink="/chats"><mat-icon class="material-icons color_blue">chat_bubble_outline</mat-icon>
+            <span class="alinearIcono">Chat</span></a>
         </div>
         
         <!-- BOTON ORIGINAL
@@ -25,6 +25,6 @@
             <span class="alinearIcono">Profile</span>
         </div>  -->
        
-        <app-navbar-profile-button></app-navbar-profile-button>
+        <a routerLink="/users"><app-navbar-profile-button></app-navbar-profile-button></a>
     </mat-toolbar-row>
   </mat-toolbar>

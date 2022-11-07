@@ -8,18 +8,19 @@ import { User } from '../models/user';
   providedIn: 'root'
 })
 export class ChatService {
-  private chatsUrl = 'api/chats';
+  private chatsUrl = 'http://localhost:3000/api/chats';
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   };
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   // GET chat from mock DB
   getChat(id: number): Observable<Chat> {
     const url = `${this.chatsUrl}/${id}`;
-    return this.http.get<Chat>(url).pipe(
+    return this.http.get<Chat>(url)
+    .pipe(
       tap(_ => this.log(`fetched chat id=${id}`)),
       catchError(this.handleError<Chat>(`getChat id=${id}`))
     );
@@ -29,7 +30,7 @@ export class ChatService {
   getChats(): Observable<Chat[]> {
     return this.http.get<Chat[]>(this.chatsUrl).pipe(
       tap(_ => this.log('fetched chats')),
-      catchError(this.handleError<Chat[]>('getChats', []))
+      catchError(this.handleError<Chat[]>('getChats'))
     );
   }
 

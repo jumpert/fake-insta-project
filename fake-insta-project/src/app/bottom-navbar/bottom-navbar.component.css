@@ -22,3 +22,8 @@
   .material-icons.color_blue:hover { 
       color: blueviolet;
     }
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}

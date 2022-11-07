@@ -12,7 +12,7 @@ import { Image } from '../models/image';
 })
 export class SearchService {
   private url = 'api/imagesByCategory';
-  private url2 = 'api/images';
+  private url2 = 'http://localhost:3000/api/images';
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),

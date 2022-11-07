@@ -10,7 +10,7 @@ import { Image } from '../models/image';
 })
 
 export class ImageService {
-  private imageUrl = 'api/images';
+  private imageUrl = 'http://localhost:3000/api/images';
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),

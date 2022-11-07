@@ -1,9 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-
 import { User } from '../models/user';
 import { Image } from '../models/image';
 import { ImageService } from '../services/image.service';
-
 import { UserService } from './../services/user.service';
 
 @Component({
@@ -15,16 +13,11 @@ import { UserService } from './../services/user.service';
 export class UserComponent implements OnInit {
 
   @Input() user!: User;
-
   imageProfile!: Image;
-
   users: User[] = [];
-
   images: Image[] = [];
-
-  profilePicture?: string;
-
-  profileImagesSrc?: string[];
+  //profilePicture?: string;
+  //profileImagesSrc?: string[];
 
   constructor(private userService: UserService, private imageService: ImageService) { }
 
@@ -33,8 +26,8 @@ export class UserComponent implements OnInit {
     this.getImages();
     console.log("users", this.users);
     console.log(this.images);
-    console.log("profilePicture",this.profilePicture);
-    
+    //console.log("profilePicture",this.profilePicture);
+    console.log(this.users.length);
   }
 
   getUsers(): void {

@@ -1,12 +1,7 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="profile flex">
+<!-- <div class="profile flex">
   <ng-container *ngFor="let profile of users">
     <div id="profile-thumbnail">
-      <img src={{images[chat.id + 7].imageSrc}} alt="" class="avatar" />
+      <img src={{images[profile.profilePic].imageSrc}} alt="" class="avatar" />
     </div>
 
     <div class="profile-info">
@@ -14,4 +9,17 @@
       <p class="username">{{profile.username}}</p>
     </div>
   </ng-container>
+</div> -->
+<div class="container">
+<div class="row justify-content-center">
+  <ng-container *ngFor="let profile of users">
+  <div class="col-sm-2 card" style="width: 18rem;">
+    <img src={{images[profile.profilePic].imageSrc}} class="card-img-top" alt="...">
+    <div class="card-body">
+      <h2 class="card-title">{{profile.username}}</h2>
+      <p class="card-text">{{profile.firstName}} {{profile.lastName}}, fotos publicadas {{profile.profileImages.length}}</p>
+    </div>
+  </div>
+  </ng-container>
+</div>
 </div>

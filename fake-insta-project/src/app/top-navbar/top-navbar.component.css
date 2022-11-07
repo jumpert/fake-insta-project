@@ -9,7 +9,7 @@
 }
 
 .toolbarNav{  
-    position: fixed;
+    position: static;
     top: 0; 
     z-index: 1000;
     display: flex;
@@ -47,4 +47,8 @@
     border: none;
     /* color: white; */
     display: block;
+}
+a { 
+    text-decoration: none;
+    color: rgb(14, 0, 136);
 }

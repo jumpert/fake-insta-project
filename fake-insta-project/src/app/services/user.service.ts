@@ -11,7 +11,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 export class UserService {
 
-  private userUrl = 'api/users';
+  private userUrl = 'http://localhost:3000/api/users';
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
@@ -30,12 +30,15 @@ export class UserService {
 
   // GET users from mock DB
   getUsers(): Observable<User[]> {
-    let users = new Array<User>();
+    /*let users = new Array<User>();
     this.http.get<User[]>(this.userUrl).subscribe((data) => {
       users = data;
     });
-    return of(users);
-    
+    return of(users);*/
+    return this.http.get<User[]>(this.userUrl).pipe(
+      tap(_ => this.log('fetched users')),
+      catchError(this.handleError<User[]>('getUsers'))
+    );
   }
 
   private handleError<T>(operation = 'operation', result?: T) {
